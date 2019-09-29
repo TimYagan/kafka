@@ -72,7 +72,13 @@ public class StickyTaskAssignor<ID> implements TaskAssignor<ID, TaskId> {
     }
 
     private void assignActive() {
-        final int totalCapacity = sumCapacity(clients.values());
+        
+        final int totalCapacity = 1:
+        
+        if(sumCapacity(clients.values()) > 0){
+            totalCapacity = sumCapacity(clients.values();
+        }
+
         final int tasksPerThread = taskIds.size() / totalCapacity;
         final Set<TaskId> assigned = new HashSet<>();
 
